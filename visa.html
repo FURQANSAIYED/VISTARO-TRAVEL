@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Visa Assistance – Vistaro</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; padding: 20px; }
+    h2 { text-align: center; }
+    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
+    input, button { padding: 10px; font-size: 1rem; }
+    button { background: gold; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Visa Assistance Form</h2>
+  <p style="text-align:center;">Upload your documents below and we’ll get back to you on WhatsApp or Email.</p>
+  <form onsubmit="alert('✅ Visa request submitted successfully!'); return false;">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <input type="file" required />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
