@@ -2,22 +2,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><title>Visa Assistance – Vistaro</title>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; padding: 20px; }
-    h2 { text-align: center; }
-    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
-    input, button { padding: 10px; font-size: 1rem; }
-    button { background: gold; border: none; cursor: pointer; }
-  </style>
+
+<button class="toggle-dark" onclick="document.body.classList.toggle('dark')">🌓 Toggle Theme</button>
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+}
+body.dark {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+}
+body {
+  background-color: var(--bg); color: var(--text); transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+.toggle-dark {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: gold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+</style>
+
+<style>
+.container { max-width: 600px; margin: auto; padding: 40px 20px; }
+input, button { width: 100%; padding: 10px; margin: 10px 0; font-size: 1rem; }
+button { background: navy; color: white; border: none; border-radius: 5px; }
+form { background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); padding: 20px; border-radius: 12px; }
+</style>
 </head>
 <body>
-  <h2>Visa Assistance Form</h2>
-  <p style="text-align:center;">Upload your documents below and we’ll get back to you on WhatsApp or Email.</p>
-  <form onsubmit="alert('✅ Visa request submitted successfully!'); return false;">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <input type="file" required />
-    <button type="submit">Submit</button>
-  </form>
+  <div class="container">
+    <h2 style="text-align:center;">📤 Upload Your Visa Documents</h2>
+    <p style="text-align:center;">Submit your name, email, and documents. We'll respond shortly.</p>
+    <form action="https://formsubmit.co/a1enterprises8787@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="file" name="attachment" required />
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <button type="submit">Submit Now</button>
+    </form>
+  </div>
 </body>
 </html>
