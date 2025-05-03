@@ -6,29 +6,48 @@
   <meta name="viewport" content='width=device-width, initial-scale=1.0'>
   <title>Vistaro Travel | Home</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; }
-    header { background: navy; color: white; padding: 20px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .hero { background: url('https://source.unsplash.com/1600x600/?dubai,travel') center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 6px black; font-size: 2rem; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #fefefe; }
+    header { background: navy; color: white; padding: 20px 0; position: sticky; top: 0; z-index: 1000; }
+    nav { display: flex; justify-content: center; gap: 30px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .slider { position: relative; overflow: hidden; height: 400px; }
+    .slider img { width: 100%; height: 400px; object-fit: cover; animation: fade 20s infinite; }
+    @keyframes fade {
+      0%, 100% { opacity: 1; }
+      33% { opacity: 0; }
+      66% { opacity: 1; }
+    }
     .section { padding: 40px; text-align: center; }
     .cta { background: gold; padding: 20px; font-size: 1.2rem; border-radius: 10px; display: inline-block; color: black; margin-top: 20px; }
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; z-index: 100; }
+    .whatsapp img { width: 60px; height: 60px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Vistaro Travel</h1>
+    <h1 style="text-align:center;">Vistaro Travel</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="tours.html">Tours</a>
-      <a href="visa.html">Visa Assistance</a>
+      <a href="visa.html">Visa</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <div class="hero">Explore Dubai Like Never Before</div>
+
+  <div class="slider">
+    <img src="https://source.unsplash.com/1600x600/?dubai,travel" alt="Dubai 1">
+  </div>
+
   <div class="section">
-    <h2>Premium Travel Packages</h2>
-    <p>Plan your dream trip with Vistaro — Solo, Couple, or Family tours curated with care.</p>
+    <h2>Plan Your Premium Dubai Experience</h2>
+    <p>Curated tours for solo travelers, couples, and families — with full visa assistance.</p>
     <a class="cta" href="https://wa.me/917778061950?text=Hi%2C%20I%20want%20to%20book%20a%20Dubai%20tour%20with%20Vistaro" target="_blank">📲 Book Now on WhatsApp</a>
+  </div>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/917778061950" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+    </a>
   </div>
 </body>
 </html>
