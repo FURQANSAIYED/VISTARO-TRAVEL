@@ -3,139 +3,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content='width=device-width, initial-scale=1.0'>
-  <title>Vistaro Travel | v4 Futuristic</title>
+  <title>Vistaro Travel | Final v4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    :root {
-      --bg: #ffffff;
-      --text: #111111;
-      --accent: gold;
-    }
-    body.dark {
-      --bg: #0f0f0f;
-      --text: #ffffff;
-    }
-    body {
-      margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg); color: var(--text); transition: all 0.4s ease;
-    }
-    header {
-      position: sticky; top: 0; background: navy;
-      padding: 20px; color: white; text-align: center; z-index: 1000;
-    }
-    nav a {
-      color: white; text-decoration: none; margin: 0 15px;
-      font-weight: bold;
-    }
-    .hero {
-      position: relative; height: 100vh; overflow: hidden;
-    }
-    .hero video {
-      position: absolute; width: 100%; height: 100%;
-      object-fit: cover; z-index: -1;
-    }
-    .hero-text {
-      position: absolute; top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      color: white; text-align: center;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
-    }
-    .hero-text h1 {
-      font-size: 3rem;
-      animation: fadeIn 2s ease-out forwards;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .section {
-      padding: 50px 20px; text-align: center;
-    }
-    .packages {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
-    }
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-      padding: 20px;
-      width: 260px;
-      color: var(--text);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-10px);
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 10px;
-      background: navy;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-    .toggle-dark {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--accent);
-      border: none;
-      padding: 10px 20px;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-    .whatsapp img {
-      width: 60px; height: 60px;
-    }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #fefefe; }
+    nav { background: navy; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem; text-align: center; }
   </style>
 </head>
 <body>
-  <button class="toggle-dark" onclick="document.body.classList.toggle('dark')">🌓 Toggle Theme</button>
-  <header>
-    <h1>Vistaro Travel</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="tours.html">Tours</a>
-      <a href="visa.html">Visa</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tours.html">Tours</a>
+    <a href="visa.html">Visa</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section>
+    <h1>Welcome to Vistaro Travel</h1>
+    <p>Explore premium international travel and visa solutions.</p>
+  </section>
+  
+<!-- Floating ChatBot -->
+<script>
+  window.__lc = window.__lc || {};
+  window.__lc.license = 14231741; // Demo Landbot ID or replace with yours
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
 
-  <div class="hero">
-    <video autoplay muted loop>
-      <source src="https://cdn.coverr.co/videos/coverr-dubai-sunset-2529/1080p.mp4" type="video/mp4" />
-    </video>
-    <div class="hero-text">
-      <h1>Book Global Luxury Tours</h1>
-      <p style="font-size:1.2rem;">Explore Dubai, Europe, Maldives, Umrah & more</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>🌍 Popular Packages</h2>
-    <div class="packages">
-      <div class="card"><h3>Dubai</h3><p>₹44,999</p><a href="https://wa.me/917778061950?text=I want Dubai">Book</a></div>
-      <div class="card"><h3>Turkey</h3><p>₹64,000</p><a href="https://wa.me/917778061950?text=I want Turkey">Book</a></div>
-      <div class="card"><h3>Europe</h3><p>₹1.2L</p><a href="https://wa.me/917778061950?text=I want Europe">Book</a></div>
-      <div class="card"><h3>Bali</h3><p>₹58,000</p><a href="https://wa.me/917778061950?text=I want Bali">Book</a></div>
-      <div class="card"><h3>Maldives</h3><p>₹72,000</p><a href="https://wa.me/917778061950?text=I want Maldives">Book</a></div>
-      <div class="card"><h3>Umrah</h3><p>₹1.35L</p><a href="https://wa.me/917778061950?text=I want Umrah">Book</a></div>
-    </div>
-  </div>
-
-  <div class="whatsapp">
-    <a href="https://wa.me/917778061950" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
-    </a>
-  </div>
 </body>
 </html>
