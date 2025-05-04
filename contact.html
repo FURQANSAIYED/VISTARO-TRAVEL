@@ -2,21 +2,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Vistaro</title>
+  <meta charset="UTF-8">
+  <title>Contact Us - Vistaro</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      min-height: 80vh;
+    }
+    .left, .right {
+      flex: 1;
+      padding: 30px;
+    }
+    .left {
+      background: url('https://i.imgur.com/KYKbsLA.jpg') center/cover no-repeat;
+      border-radius: 20px 0 0 20px;
+    }
+    .right {
+      background: white;
+      border-radius: 0 20px 20px 0;
+      box-shadow: 0 0 10px #ccc;
+    }
+    .right input, .right textarea, .right button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .right button {
+      background: navy;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="tours.html">Tours</a>
-      <a href="visa.html">Visa</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <h2>Contact Us</h2>
-  <p>📞 +91 77780 61950<br>📧 vistaro@gmail.com</p>
+  <h2 style="text-align:center;">📞 Get in Touch with Us</h2>
+  <div class="contact-wrapper">
+    <div class="left"></div>
+    <div class="right">
+      <form action="https://formsubmit.co/a1enterprises8787@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="WhatsApp Number" required />
+        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

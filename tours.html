@@ -3,26 +3,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tour Packages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour Packages - Vistaro</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+      color: white;
+      margin: 20px;
+      transition: transform 0.3s ease;
+    }
+    .glass-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px gold;
+    }
+    .tour-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="tours.html">Tours</a>
-      <a href="visa.html">Visa</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <section>
-    <h2>Top Tour Packages</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Dubai</h3><p>Starting ₹29,999</p></div>
-      <div class="card"><h3>Europe</h3><p>Starting ₹79,999</p></div>
-      <div class="card"><h3>Maldives</h3><p>Starting ₹49,999</p></div>
+  <h1 style="text-align:center;">🌍 Explore Our Tours</h1>
+  <div class="tour-grid">
+    <div class="glass-card">
+      <h2>🇦🇪 Dubai</h2>
+      <p>Starting at ₹29,999</p>
+      <a href="https://wa.me/917778061950?text=I%20want%20Dubai%20Tour" style="color:gold;">Book via WhatsApp</a>
     </div>
-  </section>
+    <div class="glass-card">
+      <h2>🇪🇺 Europe</h2>
+      <p>Starting at ₹79,999</p>
+      <a href="https://wa.me/917778061950?text=I%20want%20Europe%20Tour" style="color:gold;">Book via WhatsApp</a>
+    </div>
+    <div class="glass-card">
+      <h2>🇲🇻 Maldives</h2>
+      <p>Starting at ₹49,999</p>
+      <a href="https://wa.me/917778061950?text=I%20want%20Maldives%20Tour" style="color:gold;">Book via WhatsApp</a>
+    </div>
+  </div>
 </body>
 </html>
