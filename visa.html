@@ -3,37 +3,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Vistaro Travel | Final v4</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #fefefe; }
-    nav { background: navy; padding: 1rem; text-align: center; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    section { padding: 2rem; text-align: center; }
-  </style>
+  <title>Visa Application - Vistaro</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="tours.html">Tours</a>
-    <a href="visa.html">Visa</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <section>
-    <h1>Visa</h1>
-    <p>Explore premium international travel and visa solutions.</p>
-  </section>
-  
-<!-- Floating ChatBot -->
-<script>
-  window.__lc = window.__lc || {};
-  window.__lc.license = 14231741; // Demo Landbot ID or replace with yours
-  (function() {
-    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-    lc.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-  })();
-</script>
-
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tours.html">Tours</a>
+      <a href="visa.html">Visa</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <h2>Visa Application Form</h2>
+  <form action="https://formsubmit.co/a1enterprises8787@gmail.com" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Full Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="tel" name="phone" placeholder="WhatsApp Number" required />
+    <label>Passport Copy</label><input type="file" name="passport" required />
+    <label>Photo</label><input type="file" name="photo" required />
+    <label>Aadhaar Card</label><input type="file" name="aadhaar" required />
+    <label>Flight Ticket</label><input type="file" name="ticket" required />
+    <label>Extra Documents (Optional)</label><input type="file" name="extra" />
+    <button type="submit">Submit Application</button>
+  </form>
 </body>
 </html>

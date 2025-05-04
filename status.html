@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visa Status Checker - Vistaro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function checkStatus() {
+      const input = document.getElementById('passport').value;
+      const status = (input === "123456") ? "Approved ✅" : "Pending ⏳";
+      document.getElementById('result').innerText = status;
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tours.html">Tours</a>
+    <a href="visa.html">Visa</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <h2>Check Visa Status</h2>
+  <input id="passport" placeholder="Enter Passport Number" />
+  <button onclick="checkStatus()">Check</button>
+  <p id="result"></p>
+</body>
+</html>

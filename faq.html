@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - Vistaro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleAnswer(id) {
+      var x = document.getElementById(id);
+      x.style.display = x.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <h2>Frequently Asked Questions</h2>
+  <div>
+    <button onclick="toggleAnswer('q1')">Q: How long does visa approval take?</button>
+    <p id="q1" style="display:none;">It usually takes 7–15 working days.</p>
+    <button onclick="toggleAnswer('q2')">Q: Do packages include flights?</button>
+    <p id="q2" style="display:none;">Yes, most of our packages include flights.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour Recommender - Vistaro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function recommend() {
+      const budget = document.getElementById('budget').value;
+      let suggestion = "Try Maldives!";
+      if (budget < 40000) suggestion = "Try Dubai!";
+      else if (budget > 80000) suggestion = "Try Europe!";
+      document.getElementById('suggestion').innerText = suggestion;
+    }
+  </script>
+</head>
+<body>
+  <h2>Find Your Perfect Tour</h2>
+  <input type="number" id="budget" placeholder="Enter your budget (INR)" />
+  <button onclick="recommend()">Get Suggestion</button>
+  <p id="suggestion"></p>
+</body>
+</html>
