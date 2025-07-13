@@ -1,0 +1,28 @@
+{% include "navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trip Builder - Vistaro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <h2 style="text-align:center;">✈️ Custom Trip Builder</h2>
+  <form id="trip-builder-form" style="max-width:400px;margin:auto;">
+    <label for="dest">Destination</label>
+    <select id="dest" name="dest">
+      <option value="dubai">Dubai</option>
+      <option value="europe">Europe</option>
+      <option value="maldives">Maldives</option>
+    </select>
+    <label for="nights">Nights</label>
+    <input type="number" id="nights" name="nights" value="5" min="1" />
+    <label for="travelers">Travelers</label>
+    <input type="number" id="travelers" name="travelers" value="1" min="1" />
+    <button type="submit">Calculate Cost</button>
+  </form>
+  <p id="trip-result" style="text-align:center;"></p>
+</body>
+</html>

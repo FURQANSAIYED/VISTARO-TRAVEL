@@ -1,0 +1,25 @@
+{% include "navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter - Vistaro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <h2 style="text-align:center;">💱 Currency Converter</h2>
+  <form id="converter-form" style="max-width:400px;margin:auto;">
+    <input type="number" id="amount" placeholder="Amount in INR" />
+    <select id="currency">
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="aed">AED</option>
+      <option value="gbp">GBP</option>
+    </select>
+    <button type="submit">Convert</button>
+  </form>
+  <p id="conversion-result" style="text-align:center;"></p>
+</body>
+</html>
